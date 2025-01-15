@@ -167,13 +167,13 @@ header {
 }
 
 .section-heading {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   text-align: center;
 }
 
 .about-text {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
   line-height: 30px;
   color: rgb(117, 117, 117);
@@ -209,7 +209,7 @@ header {
 }
 
 .skills-card {
-  height: 375px;
+  height: 23.4375rem;
   border-radius: 5px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   padding: 20px;
@@ -222,7 +222,7 @@ header {
 }
 
 .skills-card h5 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
 }
 
@@ -338,6 +338,7 @@ input {
   border: none;
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 textarea {
@@ -351,4 +352,135 @@ textarea {
 input::placeholder{
     font-size: 14px;
     font-weight: 500;
+}
+
+@media screen and (max-width:576px) {
+
+  body{
+    padding-top: 0;
+  }
+
+  .hide{
+    display: none;
+  }
+  
+  .what-I-do{
+    width: 100%;
+  }
+
+  .skills-heading{
+    width: 100%;
+  }
+
+  .skills{
+    flex-direction: column;
+  }
+
+  .skills-card h5{
+    font-size: 1.5em;
+  }
+
+  footer{
+    text-align: center;
+    justify-content: center;
+  }
+
+  .foot-main-part{
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .foot-part{
+    margin: 0;
+    justify-content: center;
+  }
+
+  input{
+    width: 80%;
+  }
+
+  textarea{
+    width: 80%;
+  }
+
+  .resume-main{
+    flex-direction: column;
+  }
+
+  .about-main{
+    width: 100%;
+  }
+
+  .about-info{
+    width: 90%;
+    height: 80%;
+  }
+
+  .about-contact-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  header{
+    margin: 0;
+  }
+
+  .hero-content{
+    flex-direction: column;
+    margin: 0;
+    background-size: contain;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .hero-left{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-align: end;
+    align-items: flex-end;
+  }
+
+  .hero-info-text{
+    margin-left: 20%;
+  }
+
+  .hero-right{
+    text-align: center;
+    background-size: cover;
+  }
+
+  .profile-img{
+    width: 70%;
+    
+  }
+
+  nav{
+    padding: 10px 0;
+  }
+
+  .nav-logo{
+    text-align: center;
+  }
+
+  .nav-content{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-btn{
+    justify-content: space-between;
+  }
+
+  .hero-greetings{
+    font-size: 2rem;
+  }
+
+  .hero-name{
+    font-size: 4rem;
+  }
 }
