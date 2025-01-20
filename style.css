@@ -293,7 +293,7 @@ footer {
 .foot-main-part {
   display: flex;
   width: 80%;
-  margin: 5% auto ;
+  margin: 5% auto;
   gap: 30px;
 }
 
@@ -349,43 +349,44 @@ textarea {
   padding: 10px;
 }
 
-input::placeholder{
-    font-size: 14px;
-    font-weight: 500;
+input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
 }
 
-@media screen and (max-width:576px) {
+/* rsponsive media query for very small device */
 
-  body{
+@media screen and (max-width: 576px) {
+  body {
     padding-top: 0;
   }
 
-  .hide{
+  .hide {
     display: none;
   }
-  
-  .what-I-do{
+
+  .what-I-do {
     width: 100%;
   }
 
-  .skills-heading{
+  .skills-heading {
     width: 100%;
   }
 
-  .skills{
+  .skills {
     flex-direction: column;
   }
 
-  .skills-card h5{
+  .skills-card h5 {
     font-size: 1.5em;
   }
 
-  footer{
+  footer {
     text-align: center;
     justify-content: center;
   }
 
-  .foot-main-part{
+  .foot-main-part {
     flex-direction: column-reverse;
     margin: 0;
     width: 100%;
@@ -393,43 +394,42 @@ input::placeholder{
     justify-content: center;
   }
 
-  .foot-part{
+  .foot-part {
     margin: 0;
     justify-content: center;
   }
 
-  input{
+  input {
     width: 80%;
   }
 
-  textarea{
+  textarea {
     width: 80%;
   }
 
-  .resume-main{
+  .resume-main {
     flex-direction: column;
   }
 
-  .about-main{
+  .about-main {
     width: 100%;
   }
 
-  .about-info{
+  .about-info {
     width: 90%;
     height: 80%;
   }
 
-  .about-contact-info{
+  .about-contact-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
   }
 
-  header{
+  header {
     margin: 0;
   }
 
-  .hero-content{
+  .hero-content {
     flex-direction: column;
     margin: 0;
     background-size: contain;
@@ -437,7 +437,7 @@ input::placeholder{
     padding-top: 20px;
   }
 
-  .hero-left{
+  .hero-left {
     width: 100%;
     margin: 0;
     padding: 10px;
@@ -445,42 +445,241 @@ input::placeholder{
     align-items: flex-end;
   }
 
-  .hero-info-text{
+  .hero-info-text {
     margin-left: 20%;
   }
 
-  .hero-right{
+  .hero-right {
     text-align: center;
     background-size: cover;
   }
 
-  .profile-img{
+  .profile-img {
     width: 70%;
-    
   }
 
-  nav{
+  nav {
     padding: 10px 0;
   }
 
-  .nav-logo{
+  .nav-logo {
     text-align: center;
   }
 
-  .nav-content{
+  .nav-content {
     flex-direction: column;
     gap: 20px;
   }
 
-  .nav-btn{
+  .nav-btn {
     justify-content: space-between;
   }
 
-  .hero-greetings{
+  .hero-greetings {
     font-size: 2rem;
   }
 
-  .hero-name{
+  .hero-name {
     font-size: 4rem;
   }
+
+  
+}
+
+/* rsponsive media query for small screen device */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header{
+    margin: 0;
+  }
+  .nav-content{
+    margin: 0 20px;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  .what-I-do {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .skills-heading {
+    width: 100%;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skills-card h5 {
+    font-size: 1.5em;
+  }
+
+  .about-main {
+    width: 100%;
+  }
+
+  .about-info {
+    width: 90%;
+    height: 80%;
+  }
+
+  .about-contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resume-main {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .foot-main-part {
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .foot-part {
+    margin: 0;
+    justify-content: center;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    margin: 0;
+    background-size: contain;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .hero-left {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    text-align: end;
+    align-items: flex-end;
+  }
+
+  .hero-info-text {
+    margin-left: 20%;
+  }
+
+  .hero-right {
+    background-size: cover;
+  }
+
+}
+
+/* responsive media query for medium devices */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+  header{
+    margin: 0;
+  }
+
+  .nav-content{
+    margin: 0 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    margin: 0;
+    background-size: contain;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .hero-left {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: end;
+    align-items: flex-end;
+  }
+
+  .hero-info-text {
+    margin-left: 20%;
+  }
+
+  .hero-right {
+    background-size: contain;
+  }
+
+  .about-main {
+    width: 100%;
+  }
+
+  .about-info {
+    width: 90%;
+    height: 70%;
+  }
+
+  .what-I-do {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .skills-heading {
+    width: 100%;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skills-card{
+    width: 70%;
+  }
+
+  .resume-main{
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  footer {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .foot-main-part {
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .foot-part {
+    margin: 0;
+    padding: 0 10%;
+    justify-content: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
 }
